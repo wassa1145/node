@@ -20,6 +20,11 @@
   "homepage": "https://github.com/wassa1145/node#readme",
   "dependencies": {
     "colors": "^1.4.0",
-    "moment": "^2.29.4"
+    "inquirer": "^8.2.0",
+    "moment": "^2.29.4",
+    "yargs": "^17.5.1"
+  },
+  "bin": {
+    "reader": "cli.js"
   }
 }
