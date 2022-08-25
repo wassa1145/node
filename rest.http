@@ -1,0 +1,50 @@
+### Создаем чат
+POST http://localhost:5555/chats HTTP/1.1
+Content-Type: application/json
+
+{
+	"name": "chat 1"
+}
+
+### Получаем список чатов
+http://localhost:5555/chats
+
+### Удаляем чат
+DELETE  http://localhost:5555/chats/63077f6d997e4dc9c91457ef
+
+### Редактируем чат
+PUT http://localhost:5555/chats/6307805f997e4dc9c91457f4 HTTP/1.1
+Content-Type: application/json
+
+{
+	"name": "new-name"
+}
+
+
+
+### Создаем сообщение
+POST http://localhost:5555/messages HTTP/1.1
+Content-Type: application/json
+
+{
+	"chatId": "4",
+	"author": "USER",
+	"text": "new message"
+}
+
+### Получаем список всех сообщений
+http://localhost:5555/messages
+
+### Удаляем сообщение
+DELETE http://localhost:5555/messages/630784bc844742d7712218db
+
+### Редактируем сообщение
+PUT http://localhost:5555/messages/6304ee890594074579d6fbf5 HTTP/1.1
+
+Content-Type: application/json
+
+{
+	"chatId": "1",
+	"author": "USER",
+	"text": "new message2"
+}
